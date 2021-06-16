@@ -1,46 +1,23 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
 
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
 
 body { background: #0f0f0f; }
 
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
+
 
 header {
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/Blazing-Keyboard-blur.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
+   
    text-align: center;
    overflow: hidden;
 }
 
-/* vertically center banner section */
+
 header:before {
    content: '';
    display: inline-block;
@@ -52,7 +29,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -65,11 +42,15 @@ header .banner-text h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   font: 19px/1.9em 'librebaskerville-regular', serif;
+   font-weight: bolder;
+   
+   /* color: #A8A8A8; */
+   color: #66ff00;
+   /* color: #0cf11f; */
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 1px 1px 2px #fd0071;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -82,7 +63,7 @@ header .banner-text hr {
    border-color: rgba(150, 150, 150, .1);
 }
 
-/* header social links */
+
 header .social {
    margin: 24px 0;
    padding: 0;
@@ -97,7 +78,7 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
-/* scrolldown link */
+
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -119,8 +100,6 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
-/* primary navigation
---------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -128,7 +107,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 outline: none;
 }
 
-/* nav-wrap */
+
 #nav-wrap {
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
@@ -182,9 +161,6 @@ ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
 
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
 
 #about {
    background: #2B2B2B;
@@ -207,8 +183,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 200px;
+   height: 200px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -231,9 +207,6 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
 
 #resume {
    background: #fff;
@@ -281,12 +254,11 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
+
+
 
 .bars {
-	width: 95%;
+	width: 75%;
 	float: left;
 	padding: 0;
 	text-align: left;
@@ -341,17 +313,17 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: wordpress 2s ease;
 }
 .css {
-  	width: 90%;
+  	width: 75%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 35%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
-  	width: 75%;
+  	width: 40%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
@@ -406,9 +378,6 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 50%;  }
 }
 
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section
-/* ------------------------------------------------------------------ */
 
 #portfolio {
    background: #ebeeee;
@@ -424,7 +393,7 @@ ul#nav li.current a { color: #F06000; }
    color: #95A3A3;
 }
 
-/* Portfolio Content */
+
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
@@ -556,10 +525,9 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
 
-/* content at start */
+
+
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
    opacity: 0;
    -webkit-transition: all 200ms ease-in-out;
@@ -577,9 +545,7 @@ ul#nav li.current a { color: #F06000; }
    opacity: 0;
 }
 
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
+
 
 #call-to-action {
    background: #212121;
@@ -634,9 +600,7 @@ call-to-action .button {
 	color: #D8D8D8;
 }
 
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
+
 
 #testimonials {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
@@ -719,12 +683,12 @@ call-to-action .button {
 .flexslider .slides { zoom: 1; }
 .flexslider .slides > li { position: relative; }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
+
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
+
 .flex-container { zoom: 1; position: relative; }
 
-/* Clearfix for .slides */
+
 .slides:before,
 .slides:after {
    content: " ";
@@ -734,9 +698,7 @@ call-to-action .button {
    clear: both;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
+
 .no-js .slides > li:first-child { display: block; }
 
 /* Slider Styles */
@@ -746,7 +708,7 @@ call-to-action .button {
    overflow: hidden;
 }
 
-/* Control Nav */
+
 .flex-control-nav {
     width: 100%;
     position: absolute;
@@ -783,9 +745,7 @@ call-to-action .button {
     cursor: default;
 }
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
+
 
 #contact {
    background: #191919;
@@ -901,7 +861,7 @@ call-to-action .button {
 }
 
 
-/* Twitter Feed */
+
 #twitter {
    margin-top: 12px;
    padding: 0;
@@ -920,10 +880,6 @@ call-to-action .button {
 }
 
 
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
-
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
@@ -936,7 +892,7 @@ footer {
 footer a, footer a:visited { color: #525252; }
 footer a:hover, footer a:focus { color: #fff; }
 
-/* copyright */
+
 footer .copyright {
     margin: 0;
     padding: 0;
@@ -960,7 +916,7 @@ footer .copyright  li:first-child:before {
     display: none;
 }
 
-/* social links */
+
 footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
@@ -976,7 +932,6 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
-/* Go To Top Button */
 #go-top {
 	position: absolute;
 	top: -24px;
